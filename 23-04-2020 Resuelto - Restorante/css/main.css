@@ -1,0 +1,91 @@
+/* GENERAL */
+
+body {
+    font-family: Verdana;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    padding-left: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* HEADER */
+
+header {
+    border-bottom: 1px solid black;
+    margin: 5%;
+}
+
+
+/* CUERPO */
+
+main {
+    overflow: hidden;
+    margin: 5%;
+}
+
+nav {
+    float: left;
+}
+
+section {
+    float: right;
+    border-left: 1px solid black;
+    padding-left: 3%;
+}
+
+.entrada {
+    margin-top: 0;
+}
+
+.menu {
+    width: 30%;
+    float: right;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: grey;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+img {
+    width: 20%;
+    padding: 1%;
+}
+
+.contacto {
+    float: right;
+    margin-right: 2%;
+    padding: 1%;
+    padding-right: 2%;
+}
+
+.contacto a {
+    color: white;
+}
+
+
+/* CONTACTO */
+
+form div {
+    padding-top: 2%;
+    padding-left: 5%;
+}

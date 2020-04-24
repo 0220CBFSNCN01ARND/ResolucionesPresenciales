@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/main.cs">
+</head>
+
+<body>
+    <header>
+        <h1>Página de contacto</h1>
+    </header>
+
+    <form action="contacto.html" method="post">
+        <div>
+            <label for="origin"><b>¿De dónde sos?</b></label><br>
+            <select name="origin" id="origin">
+                    <option value="plata">La Plata</option>
+                    <option value="caba">CABA</option>
+                    <option value="berazategui">Berazategui</option>
+                    <option value="hornos">Los Hornos</option>
+                    <option value="ensenada">Ensenada</option>
+                    <option value="quilmes">Quilmes</option>
+                </select>
+        </div>
+        <div>
+            <label for="light"><b>¿Qué te pareció la iluminación del ambiente?</b></label><br>
+            <input type="radio" name="light" value="buena">Acorde<br>
+            <input type="radio" name="light" value="mejorar">Buena, pero podría mejorar<br>
+            <input type="radio" name="light" value="mala">Mala
+        </div>
+        <div>
+            <label for="food"><b>¿Qué platos te gustaron?</b></label><br>
+            <input type="checkbox" name="food" value="entrada">Entrada<br>
+            <input type="checkbox" name="food" value="principal">Plato principal<br>
+            <input type="checkbox" name="food" value="postre">Postre<br>
+            <input type="checkbox" name="food" value="otros">Otros
+        </div>
+        <div>
+            <label for="reco"><b>¿Recomendarías el lugar?</b></label><br>
+            <input type="radio" name="reco" value="si">Sí
+            <input type="radio" name="reco" value="no">No
+        </div>
+        <div>
+            <label for="why"><b>¿Por qué?</b></label><br>
+            <textarea name="why" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="contact"><b>Dejanos tus datos y nos pondremos en contacto</b></label><br>
+            <label for="name">Nombre</label>
+            <input type="text"><br>
+            <label for="email">Email</label>
+            <input type="email">
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+    <footer>
+        <a href="index.html">Volver a la carta</a>
+    </footer>
+</body>
+
+</html>

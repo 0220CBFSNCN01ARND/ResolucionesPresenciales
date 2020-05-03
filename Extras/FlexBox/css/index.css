@@ -1,0 +1,63 @@
+@media(min-width:768px) {
+    .container-1 {
+        display: flex;
+        /* Decide que hacer con el espacio restante del contenedor
+        *  stretch es el valor por defecto
+        */
+        /*
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      flex-direction:column; ///column || row
+      */
+    }
+    .container-2 {
+        display: flex;
+        /*
+      justify-content:flex-start;
+      justify-content:flex-end;
+      justify-content:center;
+      justify-content:space-around;
+      */
+        justify-content: space-between;
+    }
+}
+
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    /*Baja automaticamente y cosume mas espacio a lo largo de la pantalla al hacerla mas chica de ancho*/
+    justify-content: space-between;
+}
+
+.container-1 div,
+.container-2 div,
+.container-3 div {
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+
+.box-1 {
+    flex: 2;
+    order: 2;
+}
+
+.box-2 {
+    flex: 1;
+    order: 1;
+}
+
+.box-3 {
+    flex: 1;
+    order: 3;
+}
+
+.container-2-box {
+    flex-basis: 27%;
+    /*es lo mismo  que el width pero para flexbox*/
+}
+
+.container-3-box {
+    flex-basis: 12%;
+    /*es lo mismo  que el width pero para flexbox*/
+}

@@ -1,0 +1,12 @@
+<% for(let error of errores) { %>
+
+    <h1>
+        Mensaje:
+        <%= error.msg %>
+    </h1>
+    <h2>
+        Parametro:
+        <%= error.param %>
+    </h2>
+    <pre>Valor:<%= error.value %></pre>
+    <% } %>

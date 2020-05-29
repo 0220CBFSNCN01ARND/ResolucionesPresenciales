@@ -3,7 +3,7 @@ const path = require('path');
 
 const controller = {
 	index: (req, res) => {
-		res.render('index', { color: req.color });
+		res.render('index', { color: req.session.color });
 	},
 	queColorEs: (req, res) => {
 		res.render('queColor', { color: req.color });

@@ -1,0 +1,18 @@
+1) Generar el proyecto en express
+2) npm install
+3) npm i sequelize-cli -g
+4) npm i sequelize
+5) npm i mysql2
+6) crear archivo .sequelizerc y pegar el codigo
+/********************************************************/
+const path = require ( 'path' )
+module .exports = {
+config: path.resolve( './database/config' , 'config.js' ),
+'models-path' : path.resolve( './database/models' ),
+'seeders-path' : path.resolve( './database/seeders' ),
+'migrations-path' : path.resolve( './database/migrations' ),
+}
+/********************************************************/
+7) ejecutar "sequelize init"
+8) modificar el archivo ./database/config/config.js y agregar "module .exports ="
+9) en el Package.json cambiar node por nodemon

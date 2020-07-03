@@ -1,0 +1,54 @@
+PARTE 1:
+En esta práctica tu trabajo será trabajar en el archivo /assets/js/main.js. En algunas de
+las consignas puede que encuentres que también debas modificar el archivo HTML.
+✔ 1. Primero lo primero. Una de las primeras cosas que deberíamos hacer en nuestro archivo JS para asegurar que no tengamos problemas a futuro es encerrar todo @started(20-07-02 14:35) @done(20-07-02 14:35) @lasted(53s) nuestro código dentro del evento onload . Tu trabajo entonces, es definir este evento.
+✔ 2. Bien, vamos asegurar que esté todo bien vinculado agregando un alert en el archivo dentro del evento onload . Luego y con la tranquilidad de que todo funciona bien, eliminaremos la alerta. @started(20-07-02 14:36) @done(20-07-02 14:36) @lasted(9s)
+3. Hora de definir un primer evento:
+    ✔ a. Debes definir un evento al hacer click en el botón que dice Abracadabra @started(20-07-02 14:36) @done(20-07-02 14:38) @lasted(2m43s)
+    ✔ b. Al hacer click deberás lanzar un prompt que le diga al usuario que ingrese su nombre. @started(20-07-02 14:38) @done(20-07-02 14:38) @lasted(48s)
+    ✔ c. Tras ingresar su nombre, debes reemplazar el texto que dice “Hi, I’m Jane Doe ” por “Hi, I’m NOMBRE” donde NOMBRE debe ser el nombre ingresado por el usuario. @started(20-07-02 14:38) @done(20-07-02 14:41) @lasted(3m43s)
+✔ 4. Vamos con un segundo evento que suceda en el botón que dice Get in touch with me pero cuando se haga doble click sobre el mismo. En ese caso, modificar @started(20-07-02 14:44)el color del párrafo con clase “parrafo-color” (se encuentra arriba del botón) al color rojo. (Todo esto se encuentra en el footer de nuestro HTML) @done(20-07-02 14:48) @lasted(4m31s)
+✔ 5. Definir una función colorAlAzar . Esta función debe armar un array con 5 colores. Luego, sortear al azar un número entre 0 y 4 y retornar el color correspondiente @started(20-07-02 14:57)del array. @done(20-07-02 15:04) @lasted(7m1s)
+✔ 6. Modificar el evento de doble click sobre el botón Get in touch with me para que el texto se modifique a un color al azar en vez de siempre pasar a rojo… @started(20-07-02 15:09) @done(20-07-02 15:09) @lasted(31s)
+✔ 7. Definir 3 eventos sobre los 3 elementos que se presentan en la foto (Estamos refiriendonos a las etiquetas section aunque tendrás que modificar el HTML para poder ser específico). Al hacer click sobre estos elementos deberás: @started(20-07-02 15:12) @done(20-07-02 15:18) @lasted(6m17s)
+    ✔ a. Obtener el h3 dentro del elemento clickeado. Para esto recomendamos utilizar this.querySelector . Funciona muy similar al document . querySelector pero solo busca dentro del elemento clickeado. @started(20-07-02 15:18) @done(20-07-02 15:24) @lasted(6m3s)
+    ✔ b. Imprimir en un alerta el mensaje “Clickeaste sobre Consequat Lorem ”. Donde el texto debe ser reemplazado por el contenido del h3 @started(20-07-02 15:24) @done(20-07-02 15:24) @lasted(4s)
+
+
+PARTE 2:
+1. Generar 2 eventos sobre el botón que dice “See some of my recent work”:
+    ✔ a. Cuando se pase el mouse por encima, el párrafo que se encuentra justo encima debe cambiar de color a un color al azar @started(20-07-02 15:45) @done(20-07-02 15:45) @lasted(19s)
+    ✔ b. Al quitar el mouse del botón, el párrafo debe volver a su color original #888 @started(20-07-02 15:45) @done(20-07-02 15:45) @lasted(23s)
+2. Definiremos un evento al clickear en la foto de la lechuza:
+    ✔ a. Primero debe disparar una alerta que diga “Preparate para el futuro…” @started(20-07-02 15:52) @done(20-07-02 15:53) @lasted(1m32s)
+    ✔ b. Luego de 5 segundos disparar una segunda alerta que diga “Y el futuro ya llegó!” @done(20-07-02 15:55)
+✔ 3. Definir un evento que al presionar cualquier tecla diga “Ey, tocaste el teclado!” @started(20-07-02 15:55) @done(20-07-02 16:27) @lasted(32m30s)
+✔ 4. Modificar el evento anterior para que el mensaje sea “Ey, tocaste la barra!” y solo se vea ese mensaje si el usuario presiona la barra espaciadora @started(20-07-02 16:27) @done(20-07-02 16:32) @lasted(5m33s)
+✔ 5. Modificar el evento anterior para que el evento solo suceda si se presiona la barra espaciadora estando en el campo de email . Además, el evento debe evitar el comportamiento por defecto (no se debería poder escribir un espacio en un campo de email) @started(20-07-02 16:33) @done(20-07-02 16:38) @lasted(5m29s)
+✔ 6. Vamos con un desafío bastante más complejo… vamos a crear una máquina de estados . Nuestro objetivo será detectar cuando el usuario tipee de corrido la palabra “secreto”. El problema es que solamente podemos definir un evento cuando el usuario presiona una tecla y no cuando escribe toda una palabra. Por eso es que para empezar el ejercicio vamos a definir una variable estadoSecreto que empiece con el número 0. A partir de ahí, vamos a implementar un código interno que solo nosotros sabemos: @started(20-07-02 16:39) @done(20-07-02 16:39) @lasted(47s)
+    0 significa que todavía no escribió nada
+    1 significa que escribió “s”
+    2 significa que escribió “se”
+    3 significa que escribió “sec”
+    4 significa que escribió “secr”
+    5 significa que escribió “secre”
+    6 significa que escribió “secret”
+
+¿Qué debe hacer nuestro código?
+✔ 7 Definiremos un evento al presionar una tecla que implemente la siguiente lógica: @started(20-07-02 16:40) @done(20-07-02 17:04) @lasted(24m22s)
+    1) Si el estado es 0 y se presiona la tecla S, la variable estadoSecreto pasa a 1.
+    2) Si el estado es 1 y se presiona la tecla E, la variable estadoSecreto pasa a 2.
+    3) Si el estado es 2 y se presiona la tecla C, la variable estadoSecreto pasa a 3.
+    4) Si el estado es 3 y se presiona la tecla R, la variable estadoSecreto pasa a 4.
+    5) Si el estado es 4 y se presiona la tecla E, la variable estadoSecreto pasa a 5.
+    6) Si el estado es 5 y se presiona la tecla T, la variable estadoSecreto pasa a 6.
+    7) Si el estado es 6 y se presiona la tecla O, la variable estadoSecreto vuelve a 0 y se dispara una alerta que diga “SECRETO MAGICO”.
+✔ 8) Si no se cumple ninguna de las condiciones el estado vuelve a 0. @done(20-07-02 17:04)
+
+Extra Extra:
+1. A continuación vamos a crear un juego, este consistirá en que el usuario deberá elegir
+uno de los siguientes bloques, donde el bloque ganador será generado previamente de
+manera aleatoria. Le daremos a saber cuando elija el ganador.
+Para deberás hacer lo siguiente:
+☐ 1. Crear una variable que guarde un número aleatorio entre 1 y 6 (este será el número ganador).
+☐ 2. Luego crear una variable por cada bloque donde guardaremos la selección de todas las cajas. Deberían ser 6…. (Las cajas se encuentran como rticles en el HTML).

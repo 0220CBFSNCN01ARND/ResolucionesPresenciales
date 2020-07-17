@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <h1>
+        <%= title %>
+    </h1>
+    <p>Welcome to
+        <%= title %>
+    </p>
+
+    <script>
+        window.onload = function() {
+            var misCabeceras = new Headers();
+            //misCabeceras.append("Content-Type", "application/json");
+            //misCabeceras.append("Content-Length", content.length.toString());
+            misCabeceras.append(
+                "token",
+                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJoYXJvbGQiLCJpYXQiOjE1OTQ5NDU0OTF9.AIaNmo7VNIxyue6jNreVTEyXuEYlnpDYjNGagSYGQBI"
+            );
+
+            fetch(location.href + "api", {
+                    headers: misCabeceras,
+                })
+                .then((resp) => {
+                    return resp.text();
+                })
+                .then((resp) => {
+                    console.log(JSON.parse(resp));
+                });
+        };
+    </script>
+</body>
+
+</html>
